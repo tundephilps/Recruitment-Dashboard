@@ -1,0 +1,394 @@
+.plate9 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 2px;
+  border: 1px solid #8492a7;
+  box-sizing: border-box;
+}
+.checkboxactivedefault {
+  position: relative;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.candidates {
+  position: relative;
+  line-height: 22px;
+  font-weight: 600;
+}
+.checkboxParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 0px;
+  gap: 32px;
+}
+.qualified {
+  position: relative;
+  line-height: 22px;
+  font-weight: 500;
+}
+.wrapper {
+  border-radius: 40px;
+  background-color: #edf4ff;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 6px;
+  text-align: center;
+  font-size: 10px;
+}
+.sdfs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  color: #1d4ed8;
+}
+.div1 {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.task {
+  position: relative;
+  line-height: 22px;
+}
+.container {
+  border-radius: 40px;
+  background-color: #f7f8fd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1px 6px;
+  text-align: center;
+  font-size: 10px;
+  color: #22215b;
+}
+.sdfs1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  color: #0b0b0b;
+}
+.candidateStatusBar1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  color: #f3f3f4;
+}
+.tabN {
+  position: relative;
+  font-weight: 500;
+}
+.frameChild {
+  border-radius: 40px;
+  background-color: #e6e9ef;
+  display: none;
+}
+.tabNParent {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.plate10 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 16px;
+  background-color: #dadada;
+}
+.handleChild {
+  position: absolute;
+  top: calc(50% - 6px);
+  left: 0px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 35, 11, 0.2);
+  width: 12px;
+  height: 12px;
+}
+.handle {
+  position: absolute;
+  top: calc(50% - 6px);
+  left: 2px;
+  width: 12px;
+  height: 12px;
+}
+.switchBasic2 {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  display: none;
+}
+.plate11 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 16px;
+  background-color: #0557e5;
+}
+.handleItem {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 9px);
+  right: 0px;
+  left: 0px;
+  border-radius: 16px;
+  background-color: #fff;
+  height: 18px;
+}
+.handle1 {
+  position: absolute;
+  top: calc(50% - 9px);
+  right: 3px;
+  box-shadow: 0px 2px 4px rgba(0, 35, 11, 0.2);
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+.switchBasic3 {
+  position: relative;
+  width: 44px;
+  height: 22px;
+  display: none;
+}
+.frameParent1 {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px 0px;
+  gap: 16px;
+  text-align: center;
+  color: #0b0b0b;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #1d4ed8;
+}
+.frameItem {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+}
+.as {
+  position: absolute;
+  top: 12.5px;
+  left: 14px;
+  font-weight: 600;
+}
+.asWrapper {
+  position: relative;
+  border-radius: 100px;
+  background-color: #edf4ff;
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.aaliyahSanderson {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+.bachelorCambridge6 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 300;
+}
+.topCandidate {
+  position: relative;
+}
+.topCandidateParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 8px;
+  color: #1d4ed8;
+}
+.placementTag {
+  border-radius: 16px;
+  background-color: #f3fafc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 10px;
+}
+.efres {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 8px;
+  color: #037092;
+}
+.aaliyahSandersonParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 10px;
+  color: #000;
+}
+.frame2 {
+  width: 538px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.candidateSearchCard7 {
+  flex: 1;
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px;
+}
+.applicationProgramCandidate5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.frame7 {
+  align-self: stretch;
+  width: 538px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.mediaPlayCircle1 {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.mediaPlayCircleParent {
+  border-radius: 16px;
+  background-color: #f7f8fd;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 4px 8px;
+  gap: 4px;
+}
+.fileNotebookParent {
+  border-radius: 16px;
+  background-color: #e3ebff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 4px 16px;
+  gap: 8px;
+  color: #1d4ed8;
+}
+.frameParent3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.frameParent2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #305dc6;
+}
+.candidateSearchCard13 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.candidateSearchCard12 {
+  align-self: stretch;
+  height: 157px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.frameParent {
+  position: relative;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 16px 0px;
+  box-sizing: border-box;
+  gap: 4px;
+  text-align: left;
+  font-size: 20px;
+  color: #d0e1ff;
+  font-family: Poppins;
+}

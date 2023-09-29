@@ -1,0 +1,163 @@
+.londonInternshipProgram1 {
+  position: relative;
+  font-weight: 600;
+}
+.london {
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  color: #0b0b0b;
+}
+.andkjeanf {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.opportunityBrowsing {
+  position: relative;
+  line-height: 22px;
+  font-weight: 500;
+}
+.opportunityBrowsingWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.arrowCaretDownMd {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.applicationStagesDropDown1 {
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 4px 25px rgba(29, 78, 216, 0.05);
+  width: 321px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+.tag {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 25px rgba(141, 141, 141, 0.05);
+  border: 0.5px solid #ececec;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.wishlist1 {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 25px rgba(141, 141, 141, 0.05);
+  border: 0.5px solid #ececec;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.programApplicationCtaChild {
+  position: relative;
+  width: 1px;
+  height: 25px;
+}
+.moveToVideo1 {
+  position: relative;
+  line-height: 22px;
+}
+.moveToVideoInterviewIWrapper {
+  align-self: stretch;
+  border-radius: 8px 0px 0px 8px;
+  background-color: #1d5ecd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+.frameChild {
+  align-self: stretch;
+  position: relative;
+  background-color: #fff;
+  width: 1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.expandMoreIcon1 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.expandMoreWrapper {
+  align-self: stretch;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #1d5ecd;
+  width: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 10px;
+  box-sizing: border-box;
+}
+.frameParent {
+  align-self: stretch;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.programApplicationCta {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #fff;
+}
+.cta {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.andkjeanfParent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  text-align: left;
+  font-size: 20px;
+  color: #1d4ed8;
+  font-family: Poppins;
+}

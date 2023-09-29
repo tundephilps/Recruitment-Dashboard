@@ -1,0 +1,187 @@
+.interfaceSearchMagnifying1 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.interfaceSearchMagnifyingParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.search {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  color: #9aa6ac;
+}
+.filters1 {
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.text2 {
+  position: relative;
+  font-family: Inter;
+}
+.selected {
+  position: relative;
+  line-height: 22px;
+  font-weight: 300;
+}
+.filtersParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  font-size: 12px;
+}
+.filtersChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+}
+.fileFileDocument5 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.personalInformation {
+  position: relative;
+  line-height: 22px;
+}
+.fileFileDocumentParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.arrowCaretDownMd {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+}
+.filters {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.locationRiyadh1 {
+  position: relative;
+}
+.closeIcon3 {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.inputBasic3 {
+  border-radius: 10px;
+  background-color: #ecf1ff;
+  border: 1px solid #d8dfeb;
+  box-sizing: border-box;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1px 8px;
+  gap: 16px;
+}
+.inputBasicParent {
+  width: 385px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.inputBasic5 {
+  border-radius: 10px;
+  background-color: #ecf1ff;
+  border: 1px solid #d8dfeb;
+  box-sizing: border-box;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1px 8px;
+  gap: 16px;
+  color: #0b0b0b;
+}
+.div {
+  position: relative;
+  font-size: 13px;
+  font-weight: 200;
+}
+.clearFilters {
+  position: relative;
+  font-weight: 300;
+}
+.inputBasicGroup {
+  width: 385px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  color: #384a69;
+}
+.frameParent3 {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  font-size: 10px;
+}
+.searchParent {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  text-align: left;
+  font-size: 14px;
+  color: #0b0b0b;
+  font-family: Poppins;
+}

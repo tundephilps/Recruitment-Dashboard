@@ -1,0 +1,79 @@
+.filters1 {
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.text1 {
+  position: relative;
+  font-family: Inter;
+}
+.selected {
+  position: relative;
+  line-height: 22px;
+  font-weight: 300;
+}
+.filtersParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  font-size: 12px;
+}
+.filtersChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+}
+.fileFileDocument5 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.personalInformation {
+  position: relative;
+  line-height: 22px;
+}
+.fileFileDocumentParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.arrowCaretDownMd {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+}
+.filters {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 14px;
+  color: #0b0b0b;
+  font-family: Poppins;
+}

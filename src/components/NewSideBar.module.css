@@ -1,0 +1,62 @@
+.frameChild {
+  position: relative;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.instanceParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.as {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: 600;
+}
+.asWrapper {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border-radius: 100px;
+  background-color: #d7e5fd;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.instanceGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.sideNav {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 10px;
+  color: #b1cdfd;
+  font-family: Poppins;
+}
