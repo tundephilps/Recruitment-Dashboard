@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Filters.module.css";
 import { LuStickyNote } from "react-icons/lu";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";

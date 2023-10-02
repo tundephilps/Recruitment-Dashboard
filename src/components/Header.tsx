@@ -1,6 +1,4 @@
-import { BsChevronDown } from "react-icons/bs";
-
-import { Select, Space } from "antd";
+import { Select } from "antd";
 import { BsEnvelope } from "react-icons/bs";
 import {
   BiPurchaseTag,

@@ -1,12 +1,10 @@
 import { GoHome } from "react-icons/go";
-import {
-  PiUsersThreeBold,
-  PiNotebookLight,
-  PiNoteDuotone,
-} from "react-icons/Pi";
 import { BsCalendarCheck, BsShare } from "react-icons/bs";
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineLeft } from "react-icons/ai";
+import { FaUsers } from "react-icons/fa";
+import { GrNotes } from "react-icons/gr";
+import { CgNotes } from "react-icons/cg";
 
 const Siderbar = () => {
   return (
@@ -64,7 +62,7 @@ const Siderbar = () => {
             color: "#444444",
           }}
         >
-          <PiUsersThreeBold />
+          <FaUsers />
         </div>
         <div
           style={{
@@ -100,7 +98,7 @@ const Siderbar = () => {
             color: "#444444",
           }}
         >
-          <PiNoteDuotone />
+          <GrNotes />
         </div>
         <div
           style={{
@@ -112,7 +110,7 @@ const Siderbar = () => {
             color: "#444444",
           }}
         >
-          <PiNotebookLight />
+          <CgNotes />
         </div>
         <div
           style={{
@@ -151,7 +149,7 @@ const Siderbar = () => {
             color: "#444444",
           }}
         >
-          <PiNotebookLight />
+          <CgNotes />
         </div>
         <div
           style={{

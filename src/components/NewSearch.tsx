@@ -2,22 +2,30 @@ import styles from "../Styles/Frame.module.css";
 
 import { LuStickyNote } from "react-icons/lu";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { BsSearch } from "react-icons/bs";
+import { PiWarningCircleLight } from "react-icons/pi";
 
 export const NewSearch = () => {
   return (
     <div className={styles.searchParent}>
       <div className={styles.search}>
         <div className={styles.interfaceSearchMagnifyingParent}>
-          <img
-            className={styles.interfaceSearchMagnifying1}
-            alt=""
-            src="Interface / Search_Magnifying_Glass.svg"
-          />
+          <BsSearch className={styles.interfaceSearchMagnifying1} />
           <div className={styles.personalInformation}>
-            Serach by name, edu, exp or #tag
+            <input
+              placeholder="
+            Serach by name, edu, exp or #tag"
+              style={{
+                backgroundColor: "white",
+                width: "400px",
+                border: "none",
+                outline: "none",
+                color: "black",
+              }}
+            />
           </div>
         </div>
-        <img
+        <PiWarningCircleLight
           className={styles.interfaceSearchMagnifying1}
           alt=""
           src="Warning / Circle_Warning.svg"

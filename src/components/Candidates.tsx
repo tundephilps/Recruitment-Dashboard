@@ -3,8 +3,8 @@ import styles from "../Styles/Candidates.module.css";
 import { Checkbox, Divider } from "antd";
 import type { CheckboxChangeEvent } from "antd/es/checkbox";
 import type { CheckboxValueType } from "antd/es/checkbox/Group";
-
-const CheckboxGroup = Checkbox.Group;
+import { GrNotes } from "react-icons/gr";
+import { AiOutlinePlayCircle } from "react-icons/ai";
 
 const plainOptions = ["Apple", "Pear", "Orange"];
 const defaultCheckedList = ["Apple", "Orange"];
@@ -17,9 +17,9 @@ const Candidates: FunctionComponent = () => {
   const indeterminate =
     checkedList.length > 0 && checkedList.length < plainOptions.length;
 
-  const onChange = (list: CheckboxValueType[]) => {
-    setCheckedList(list);
-  };
+  // const onChange = (list: CheckboxValueType[]) => {
+  //   setCheckedList(list);
+  // };
 
   const onCheckAllChange = (e: CheckboxChangeEvent) => {
     setCheckedList(e.target.checked ? plainOptions : []);
@@ -76,7 +76,7 @@ const Candidates: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="Line 36.svg" />
+      <Divider className={styles.frameItem} />
       <div className={styles.applicationProgramCandidate5}>
         <Checkbox />
 
@@ -110,7 +110,8 @@ const Candidates: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="Line 31.svg" />
+
+      <Divider className={styles.frameItem} />
       <div className={styles.applicationProgramCandidate5}>
         <Checkbox />
         <div className={styles.candidateSearchCard7}>
@@ -143,7 +144,8 @@ const Candidates: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="Line 32.svg" />
+
+      <Divider className={styles.frameItem} />
       <div className={styles.applicationProgramCandidate5}>
         <Checkbox />
         <div className={styles.candidateSearchCard7}>
@@ -176,7 +178,8 @@ const Candidates: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="Line 33.svg" />
+
+      <Divider className={styles.frameItem} />
       <div className={styles.applicationProgramCandidate5}>
         <Checkbox />
         <div className={styles.candidateSearchCard7}>
@@ -209,7 +212,7 @@ const Candidates: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="Line 34.svg" />
+      <Divider className={styles.frameItem} />
       <div className={styles.applicationProgramCandidate5}>
         <Checkbox />
         <div className={styles.candidateSearchCard7}>
@@ -242,7 +245,8 @@ const Candidates: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <img className={styles.frameItem} alt="" src="Line 35.svg" />
+
+      <Divider className={styles.frameItem} />
       <div className={styles.candidateSearchCard12}>
         <Checkbox />
         <div className={styles.candidateSearchCard13}>
@@ -269,21 +273,24 @@ const Candidates: FunctionComponent = () => {
             <div className={styles.frameParent3}>
               <div className={styles.checkbox}>
                 <div className={styles.mediaPlayCircleParent}>
-                  <img
-                    className={styles.mediaPlayCircle1}
-                    alt=""
-                    src="Media / Play_Circle.svg"
-                  />
+                  <AiOutlinePlayCircle className={styles.mediaPlayCircle1} />
                   <div className={styles.topCandidate}>4</div>
                 </div>
               </div>
               <div className={styles.fileNotebookParent}>
-                <img
+                <GrNotes
                   className={styles.mediaPlayCircle1}
-                  alt=""
-                  src="File / Notebook.svg"
+                  style={{ color: "blue", fontSize: "14px" }}
                 />
-                <div className={styles.topCandidate}>5 Programs</div>
+                <div
+                  style={{
+                    width: "100px",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  4 Programs
+                </div>
               </div>
             </div>
             <div />
