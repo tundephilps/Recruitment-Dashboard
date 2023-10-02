@@ -1,10 +1,7 @@
 import { FunctionComponent } from "react";
-import styles from "./Newheader.module.css";
+import styles from "../Styles/Newheader.module.css";
 
-import { DownOutlined, UserOutlined } from "@ant-design/icons";
-import type { MenuProps } from "antd";
 import { BsChevronDown } from "react-icons/bs";
-import { Button, Dropdown, message, Space, Tooltip } from "antd";
 import { BsEnvelope } from "react-icons/bs";
 import {
   BiPurchaseTag,
@@ -12,8 +9,12 @@ import {
   BiUserVoice,
   BiUserCheck,
 } from "react-icons/bi";
-import { RxDividerVertical } from "react-icons/rx";
-import { BsChevronCompactDown } from "react-icons/bs";
+
+import { Select, Space } from "antd";
+
+const handleChange = (value: string) => {
+  console.log(`selected ${value}`);
+};
 
 const Newheader: FunctionComponent = () => {
   return (
@@ -25,7 +26,285 @@ const Newheader: FunctionComponent = () => {
         <div className={styles.london}>London</div>
       </div>
       <div className={styles.cta}>
-        <div className={styles.applicationStagesDropDown1}>
+        {/* Dropdown Select   */}
+        <Select
+          defaultValue="Oppurtunity Browsing"
+          dropdownStyle={{ height: "70%", minHeight: "600px" }}
+          style={{
+            width: "321px",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            backgroundColor: "#ffffff",
+            borderRadius: "50px",
+            color: "blue",
+          }}
+          onChange={handleChange}
+          options={[
+            {
+              value: "shortlisted",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Applied</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>1745</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "Shortlisted",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Shortlisted</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "Technical interview",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Technical interview</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>123</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "Oppurtunity Browsing",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Oppurtunity Browing</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "Video Interview I",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Video Interview I</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "Offer",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Offer</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "Withdrawn",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Withdrawn</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "shortlisted",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Shortlisted</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "shortlisted",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Shortlisted</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              value: "shortlisted",
+              label: (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <p>Shortlisted</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "lightgray",
+                      width: "32px",
+                      height: "22px",
+                    }}
+                  >
+                    <p>453</p>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        {/* <div className={styles.applicationStagesDropDown1}>
           <div className={styles.opportunityBrowsingWrapper}>
             <div className={styles.opportunityBrowsing}>
               Opportunity Browsing
@@ -36,7 +315,7 @@ const Newheader: FunctionComponent = () => {
             alt=""
             src="Arrow / Caret_Down_MD.svg"
           />
-        </div>
+        </div> */}
         <div className={styles.programApplicationCta}>
           <div className={styles.tag}>
             <BiPurchaseTag

@@ -1,16 +1,38 @@
-import { FunctionComponent } from "react";
-import styles from "./Candidates.module.css";
+import { FunctionComponent, useState } from "react";
+import styles from "../Styles/Candidates.module.css";
+import { Checkbox, Divider } from "antd";
+import type { CheckboxChangeEvent } from "antd/es/checkbox";
+import type { CheckboxValueType } from "antd/es/checkbox/Group";
+
+const CheckboxGroup = Checkbox.Group;
+
+const plainOptions = ["Apple", "Pear", "Orange"];
+const defaultCheckedList = ["Apple", "Orange"];
 
 const Candidates: FunctionComponent = () => {
+  const [checkedList, setCheckedList] =
+    useState<CheckboxValueType[]>(defaultCheckedList);
+
+  const checkAll = plainOptions.length === checkedList.length;
+  const indeterminate =
+    checkedList.length > 0 && checkedList.length < plainOptions.length;
+
+  const onChange = (list: CheckboxValueType[]) => {
+    setCheckedList(list);
+  };
+
+  const onCheckAllChange = (e: CheckboxChangeEvent) => {
+    setCheckedList(e.target.checked ? plainOptions : []);
+  };
   return (
     <div className={styles.frameParent}>
       <div className={styles.frameGroup}>
         <div className={styles.checkboxParent}>
-          <div className={styles.checkbox}>
-            <div className={styles.checkboxactivedefault}>
-              <div className={styles.plate9} />
-            </div>
-          </div>
+          <Checkbox
+            indeterminate={indeterminate}
+            onChange={onCheckAllChange}
+            checked={checkAll}
+          ></Checkbox>
           <div className={styles.candidates}>247 Candidates</div>
         </div>
         <div className={styles.candidateStatusBar1}>
@@ -56,11 +78,8 @@ const Candidates: FunctionComponent = () => {
       </div>
       <img className={styles.frameItem} alt="" src="Line 36.svg" />
       <div className={styles.applicationProgramCandidate5}>
-        <div className={styles.checkbox}>
-          <div className={styles.checkboxactivedefault}>
-            <div className={styles.plate9} />
-          </div>
-        </div>
+        <Checkbox />
+
         <div className={styles.candidateSearchCard7}>
           <div className={styles.frame2}>
             <div className={styles.asWrapper}>
@@ -93,11 +112,7 @@ const Candidates: FunctionComponent = () => {
       </div>
       <img className={styles.frameItem} alt="" src="Line 31.svg" />
       <div className={styles.applicationProgramCandidate5}>
-        <div className={styles.checkbox}>
-          <div className={styles.checkboxactivedefault}>
-            <div className={styles.plate9} />
-          </div>
-        </div>
+        <Checkbox />
         <div className={styles.candidateSearchCard7}>
           <div className={styles.frame2}>
             <div className={styles.asWrapper}>
@@ -130,11 +145,7 @@ const Candidates: FunctionComponent = () => {
       </div>
       <img className={styles.frameItem} alt="" src="Line 32.svg" />
       <div className={styles.applicationProgramCandidate5}>
-        <div className={styles.checkbox}>
-          <div className={styles.checkboxactivedefault}>
-            <div className={styles.plate9} />
-          </div>
-        </div>
+        <Checkbox />
         <div className={styles.candidateSearchCard7}>
           <div className={styles.frame2}>
             <div className={styles.asWrapper}>
@@ -167,11 +178,7 @@ const Candidates: FunctionComponent = () => {
       </div>
       <img className={styles.frameItem} alt="" src="Line 33.svg" />
       <div className={styles.applicationProgramCandidate5}>
-        <div className={styles.checkbox}>
-          <div className={styles.checkboxactivedefault}>
-            <div className={styles.plate9} />
-          </div>
-        </div>
+        <Checkbox />
         <div className={styles.candidateSearchCard7}>
           <div className={styles.frame2}>
             <div className={styles.asWrapper}>
@@ -204,11 +211,7 @@ const Candidates: FunctionComponent = () => {
       </div>
       <img className={styles.frameItem} alt="" src="Line 34.svg" />
       <div className={styles.applicationProgramCandidate5}>
-        <div className={styles.checkbox}>
-          <div className={styles.checkboxactivedefault}>
-            <div className={styles.plate9} />
-          </div>
-        </div>
+        <Checkbox />
         <div className={styles.candidateSearchCard7}>
           <div className={styles.frame2}>
             <div className={styles.asWrapper}>
@@ -241,11 +244,7 @@ const Candidates: FunctionComponent = () => {
       </div>
       <img className={styles.frameItem} alt="" src="Line 35.svg" />
       <div className={styles.candidateSearchCard12}>
-        <div className={styles.checkbox}>
-          <div className={styles.checkboxactivedefault}>
-            <div className={styles.plate9} />
-          </div>
-        </div>
+        <Checkbox />
         <div className={styles.candidateSearchCard13}>
           <div className={styles.frame7}>
             <div className={styles.asWrapper}>

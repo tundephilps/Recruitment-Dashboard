@@ -1,8 +1,3 @@
-import { useState } from "react";
-
-import { Layout, Space } from "antd";
-import Siderbar from "./components/Siderbar";
-import Header from "./components/Header";
 import Body from "./components/Body";
 import NewSideBar from "./components/NewSideBar";
 import Newheader from "./components/Newheader";

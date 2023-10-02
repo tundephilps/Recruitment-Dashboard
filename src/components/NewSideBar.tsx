@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import styles from "./NewSideBar.module.css";
+import styles from "../Styles/NewSideBar.module.css";
 
 import { GoHome } from "react-icons/go";
 import {

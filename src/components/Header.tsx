@@ -1,8 +1,6 @@
-import React from "react";
-import { DownOutlined, UserOutlined } from "@ant-design/icons";
-import type { MenuProps } from "antd";
 import { BsChevronDown } from "react-icons/bs";
-import { Button, Dropdown, message, Space, Tooltip } from "antd";
+
+import { Select, Space } from "antd";
 import { BsEnvelope } from "react-icons/bs";
 import {
   BiPurchaseTag,
@@ -13,32 +11,8 @@ import {
 import { RxDividerVertical } from "react-icons/rx";
 import { BsChevronCompactDown } from "react-icons/bs";
 
-const handleMenuClick: MenuProps["onClick"] = (e) => {
-  message.info("Click on menu item.");
-  console.log("click", e);
-};
-
-const items: MenuProps["items"] = [
-  {
-    label: "1st menu item",
-    key: "1",
-    icon: <UserOutlined />,
-  },
-  {
-    label: "2nd menu item",
-    key: "2",
-    icon: <UserOutlined />,
-  },
-];
-
-const menuProps = {
-  items,
-  onClick: handleMenuClick,
-};
-
-const dropdownmenu: React.CSSProperties = {
-  width: "321px",
-  height: "40px",
+const handleChange = (value: string) => {
+  console.log(`selected ${value}`);
 };
 
 const Header = () => {
@@ -75,7 +49,20 @@ const Header = () => {
           London
         </p>
       </div>
-      <div
+
+      {/* Dropdown Select   */}
+      <Select
+        defaultValue="lucy"
+        style={{ width: 120 }}
+        onChange={handleChange}
+        options={[
+          { value: "jack", label: "Jack" },
+          { value: "lucy", label: "Lucy" },
+          { value: "Yiminghe", label: "yiminghe" },
+          { value: "disabled", label: "Disabled", disabled: true },
+        ]}
+      />
+      {/* <div
         style={{
           width: "321px",
           display: "flex",
@@ -101,7 +88,7 @@ const Header = () => {
         <div style={{ color: "#1d4ed8", height: 24, width: 24 }}>
           <BsChevronDown />
         </div>
-      </div>
+      </div> */}
       <div
         style={{
           display: "flex",

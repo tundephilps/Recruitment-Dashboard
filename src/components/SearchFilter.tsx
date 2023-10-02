@@ -1,5 +1,4 @@
 import { Input, Tooltip } from "antd";
-import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import Search from "./Search";

@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./Frame.module.css";
+import styles from "../Styles/Frame.module.css";
 
 import { LuStickyNote } from "react-icons/lu";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
