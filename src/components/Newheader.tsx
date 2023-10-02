@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styles from "../Styles/Newheader.module.css";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { BsEnvelope } from "react-icons/bs";
 import {
   BiPurchaseTag,
@@ -378,7 +378,7 @@ const Newheader: FunctionComponent = () => {
               </div>
               <div className={styles.frameChild} />
               <div className={styles.expandMoreWrapper}>
-                <img
+                <MdKeyboardArrowDown
                   className={styles.expandMoreIcon1}
                   alt=""
                   src="expand_more.svg"
