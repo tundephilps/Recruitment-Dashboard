@@ -1,19 +1,26 @@
 import Candidates from "./Candidates";
+import Header from "./Header";
 import { NewSearch } from "./NewSearch";
 
 const Body = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        gap: "32px",
-      }}
-    >
-      {/* <SearchFilter /> */}
-      <NewSearch />
-      <Candidates />
-    </div>
+    <>
+      {" "}
+      <div>
+        <Header />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "32px",
+        }}
+      >
+        {/* <SearchFilter /> */}
+        <NewSearch />
+        <Candidates />
+      </div>
+    </>
   );
 };
 

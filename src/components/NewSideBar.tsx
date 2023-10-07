@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
+import { useState } from "react";
 import styles from "../Styles/NewSideBar.module.css";
-
 import { GoHome } from "react-icons/go";
 import { BsCalendarCheck, BsShare } from "react-icons/bs";
 import { FiHeart } from "react-icons/fi";
@@ -8,10 +8,21 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { RiSettings4Line } from "react-icons/ri";
 
 import { FaUsers } from "react-icons/fa";
-import { GrNotes } from "react-icons/gr";
-import { CgNotes } from "react-icons/cg";
+import { PiNotebookLight } from "react-icons/pi";
+import { FaRegFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NewSideBar: FunctionComponent = () => {
+  const [activeIcon, setActiveIcon] = useState<string>("");
+
+  const handleIconClick = (iconName: string) => {
+    setActiveIcon(iconName);
+  };
+
+  const isIconActive = (iconName: string) => {
+    return iconName === activeIcon ? "#F9FAFF" : "#eeeeee";
+  };
+
   return (
     <div>
       <div className={styles.frameParent}>
@@ -41,19 +52,25 @@ const NewSideBar: FunctionComponent = () => {
           }}
         >
           <div className={styles.instanceParent}>
-            <div
-              style={{
-                width: "48px",
-                height: "48px",
-                color: "#1D4Ed8",
-                backgroundColor: "#b1cdfd",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <GoHome style={{ height: "24px", width: "24px" }} />
-            </div>
+            <Link to="/">
+              <div
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  color: "#1D4Ed8",
+                  backgroundColor:
+                    isIconActive("home") === "#F9FAFF" ? "#eeeeee" : "",
+
+                  //  backgroundColor: "#b1cdfd",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                onClick={() => handleIconClick("home")}
+              >
+                <GoHome style={{ height: "24px", width: "24px" }} />
+              </div>
+            </Link>
             <div
               style={{
                 width: "48px",
@@ -62,7 +79,11 @@ const NewSideBar: FunctionComponent = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 color: "#444444",
+
+                backgroundColor:
+                  isIconActive("users") === "#F9FAFF" ? "#eeeeee" : "",
               }}
+              onClick={() => handleIconClick("users")}
             >
               <FaUsers style={{ height: "24px", width: "24px" }} />
             </div>
@@ -90,6 +111,26 @@ const NewSideBar: FunctionComponent = () => {
             >
               <BsShare style={{ height: "24px", width: "24px" }} />
             </div>
+            <Link to="/opportunity">
+              <div
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#444444",
+
+                  backgroundColor:
+                    isIconActive("Charts") === "#F9FAFF" ? "#eeeeee" : "",
+                }}
+                onClick={() => handleIconClick("Charts")}
+              >
+                <FaRegFileAlt
+                  style={{ height: "24px", width: "24px", color: "#1D4Ed8" }}
+                />
+              </div>
+            </Link>
             <div
               style={{
                 width: "48px",
@@ -100,19 +141,7 @@ const NewSideBar: FunctionComponent = () => {
                 color: "#444444",
               }}
             >
-              <GrNotes style={{ height: "24px", width: "24px" }} />
-            </div>
-            <div
-              style={{
-                width: "48px",
-                height: "48px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#444444",
-              }}
-            >
-              <CgNotes style={{ height: "24px", width: "24px" }} />
+              <PiNotebookLight style={{ height: "24px", width: "24px" }} />
             </div>
             <div
               style={{

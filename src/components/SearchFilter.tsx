@@ -1,7 +1,7 @@
 import { Input, Tooltip } from "antd";
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import Search from "./Search";
+//import Search from "./Search";
 
 //const {  InfoCircleOutlined, UserOutlined  } = icons;
 
@@ -72,7 +72,7 @@ const SearchFilter = () => {
         </div>
       </div>
 
-      <Search />
+      {/* <Search /> */}
 
       {/* <div
         style={{
